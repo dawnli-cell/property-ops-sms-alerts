@@ -13,7 +13,7 @@ const event = propertyEventSchema.parse({
   scheduledAt: new Date(now.getTime() + 24 * 3_600_000).toISOString(),
 });
 const decision = decidePropertyAlert(event, now);
-if (!decision.send) throw new Error(`Reminder skipped: ${decision.reason}`);
+if (decision.send === false) throw new Error(`Reminder skipped: ${decision.reason}`);
 
 const receipt = await sendSms({
   to: decision.to,

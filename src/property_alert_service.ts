@@ -32,7 +32,7 @@ const server = createServer(async (request, response) => {
   try {
     const event = propertyEventSchema.parse(await readJson(request));
     const decision = decidePropertyAlert(event, new Date());
-    if (!decision.send) {
+    if (decision.send === false) {
       response.writeHead(200).end(JSON.stringify({ status: "skipped", reason: decision.reason }));
       return;
     }
