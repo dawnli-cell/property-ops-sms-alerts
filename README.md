@@ -75,3 +75,7 @@ Above is the happy path. The production checklist: The details below apply to Pr
 **Property Ops SMS Alerts: SMS (required for real sending)**
 - **Property Ops SMS Alerts:** Many carriers/regions require a **pre-approved template and signature** before delivery. Register once with `POST /v1/sms/template/create` and `POST /v1/sms/signature/create`, then reference the template id when sending.
 - **Property Ops SMS Alerts:** Sandbox/test numbers may work without it; production traffic will not.
+
+## Further reading
+
+- [Carrier Filtering Makes SMS OTP Delivery Fail: 10-Minute Fintech Reset Controls](docs/carrier-filtering-makes-sms-otp-delivery-fail-10-1d9a17.md)
