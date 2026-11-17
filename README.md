@@ -78,4 +78,5 @@ Above is the happy path. The production checklist: The details below apply to Pr
 
 ## Further reading
 
+- [Go Seller Alerts — SMS Provider Templates, Suppressions, and REST API Ownership](docs/go-seller-alerts-sms-provider-templates-suppressi-63hytt.md)
 - [Carrier Filtering Makes SMS OTP Delivery Fail: 10-Minute Fintech Reset Controls](docs/carrier-filtering-makes-sms-otp-delivery-fail-10-1d9a17.md)
